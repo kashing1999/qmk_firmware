@@ -45,6 +45,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_A_RIGHT { F7 }
 #define ENCODERS_PAD_B_RIGHT { F6 }
 
+#define ENCODER_RESOLUTION 2
+
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
@@ -65,11 +67,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define BACKLIGHT_PIN B5
-#define BACKLIGHT_LEVELS 5
+/* #define NO_ACTION_MACRO */
+/* #define NO_ACTION_FUNCTION */
 
-/* ws2812 RGB LED */
-#define RGB_DI_PIN D6
-#define RGBLED_NUM 12    // Number of LEDs
-#define RGBLED_SPLIT { 6, 6 }
-#define RGBLIGHT_ANIMATIONS
+#define TAPPING_TERM 165
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#define PERMISSIVE_HOLD
+/* #define LEADER_TIMEOUT 300 */
+
+// #define BACKLIGHT_PIN B5
+// #define BACKLIGHT_LEVELS 5
+
+// /* ws2812 RGB LED */
+// #define RGB_DI_PIN D6
+// #define RGBLED_NUM 12    // Number of LEDs
+// #define RGBLED_SPLIT { 6, 6 }
+// #define RGBLIGHT_ANIMATIONS
